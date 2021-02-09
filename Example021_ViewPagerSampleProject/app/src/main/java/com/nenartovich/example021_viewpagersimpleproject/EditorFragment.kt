@@ -1,5 +1,6 @@
 package com.nenartovich.example021_viewpagersimpleproject
 
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -60,5 +61,6 @@ class EditorFragment : Fragment() {
                     putInt(KEY_POSITION, position)
                 }
             }
+        fun getTitle(ctxt: Context, position: Int) = String.format(ctxt.getString(R.string.hint), position+1)
     }
 }

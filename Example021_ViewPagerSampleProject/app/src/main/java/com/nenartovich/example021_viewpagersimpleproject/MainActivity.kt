@@ -10,6 +10,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val pager = findViewById<ViewPager>(R.id.pager)
-        pager.adapter = SampleAdapter(supportFragmentManager)
+        pager.adapter = SampleAdapter(this, supportFragmentManager)
     }
 }
